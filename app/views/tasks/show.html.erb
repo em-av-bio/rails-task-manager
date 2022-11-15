@@ -1,0 +1,10 @@
+<h1><%= @task.title %></h1>
+
+<div class="details"><%= @task.details %></div>
+
+<div class="">
+<%= render 'completed', task: @task %> <span>Completed?</span>
+
+<%= link_to "Edit task", edit_task_path, class: "edit" %>
+
+<%= render 'back' %>
